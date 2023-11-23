@@ -16,7 +16,3 @@ jobs:
         env:
           SIGRID_CI_TOKEN: "${{ secrets.SIGRID_CI_TOKEN }}"
         run: "./sigridci/sigridci/sigridci.py --customer sigridworkshop --system stefanstrash --subsystem frontend --source . --publish"
-      - name: "Run Sigrid CI (subsystem)" 
-        env:
-          SIGRID_CI_TOKEN: "${{ secrets.SIGRID_CI_TOKEN }}"
-        run: "./sigridci/sigridci/sigridci.py --customer sigridworkshop --system stefanstrash --subsystem backend --source . --publish"
